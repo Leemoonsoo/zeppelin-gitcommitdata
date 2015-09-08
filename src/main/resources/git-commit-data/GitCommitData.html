@@ -1,0 +1,19 @@
+<div class="input-group">
+  <span class="input-group-addon"><i class="fa fa-git"></i></span>
+  <input type="text"
+         class="form-control"
+         ng-model="gitRepo"></input>
+  <span class="input-group-addon"><i class="fa fa-code-fork"></i></span>
+  <input type="text"
+         class="form-control"
+         ng-model="branch" size="4"></input>
+  <span class="input-group-btn">
+    <button class="btn btn-default"
+            type="button"
+            ng-click="load='loading'">
+      <span ng-show="load==='idle'">Load</span>
+      <span ng-show="load!=='idle'"><i class="fa fa-spinner fa-spin"> </i></span>
+    </button>
+  </span>
+</div>
+<div>{{msg}}</div>
